@@ -1,0 +1,67 @@
+{ "mydata": [
+  {
+    "fullName": "John Doe",
+    "gender": "Male",
+    "age": 45,
+    "department": "Finance",
+    "jobTitle": "Financial Analyst",
+    "tenure": 10
+  },
+  {
+    "fullName": "Jane Smith",
+    "gender": "Female",
+    "age": 32,
+    "department": "Human Resources",
+    "jobTitle": "HR Manager",
+    "tenure": 6
+  },
+  {
+    "fullName": "Michael Johnson",
+    "gender": "Male",
+    "age": 29,
+    "department": "Marketing",
+    "jobTitle": "Marketing Specialist",
+    "tenure": 3
+  },
+  {
+    "fullName": "Emily Davis",
+    "gender": "Female",
+    "age": 27,
+    "department": "Sales",
+    "jobTitle": "Sales Representative",
+    "tenure": 4
+  },
+  {
+    "fullName": "William Brown",
+    "gender": "Male",
+    "age": 50,
+    "department": "IT",
+    "jobTitle": "IT Manager",
+    "tenure": 15
+  },
+  {
+    "fullName": "Jessica Wilson",
+    "gender": "Female",
+    "age": 40,
+    "department": "Operations",
+    "jobTitle": "Operations Director",
+    "tenure": 12
+  },
+  {
+    "fullName": "David Martinez",
+    "gender": "Male",
+    "age": 38,
+    "department": "Product Development",
+    "jobTitle": "Product Manager",
+    "tenure": 9
+  },
+  {
+    "fullName": "Sophia Rodriguez",
+    "gender": "Female",
+    "age": 35,
+    "department": "Customer Service",
+    "jobTitle": "Customer Service Lead",
+    "tenure": 7
+  }
+]
+}

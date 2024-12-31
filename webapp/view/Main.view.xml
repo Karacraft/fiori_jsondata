@@ -1,0 +1,67 @@
+<mvc:View xmlns:core="sap.ui.core"
+    controllerName="jsontable.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <Table
+            id="idTable"
+            inset="false"
+            items="{path: '/mydata' }"
+            alternateRowColors="true"
+            sticky="ColumnHeaders,HeaderToolbar"
+            growing="true"
+            growingScrollToLoad="true"
+            class = "sapUiResponsiveMargin"
+            width="auto"
+        >
+        <headerToolbar>
+            <Toolbar
+                ariaHasPopup=""
+                height="5rem"
+                style="Standard"
+                width="auto"
+            >
+                <content>
+                <Title text="Search Options"></Title>
+                    <ToolbarSpacer ></ToolbarSpacer>
+                    <ComboBox selectionChange=".onComboBoxSelectionChange" >
+                        <items>
+                            <core:Item text="Male" key="Male"></core:Item>
+                            <core:Item text="Female" key="Female"></core:Item>
+                        </items>
+                    </ComboBox> 
+                    <ToolbarSpacer ></ToolbarSpacer>
+                    <SearchField
+                        placeholder=""
+                        visible="true"
+                        width="40%"
+                        search=".onSearch"
+                    >
+                    </SearchField>
+                </content>
+            </Toolbar>
+        </headerToolbar>
+        <columns>
+            <Column ><Text text = "Name"></Text></Column>
+            <Column ><Text text = "Gender"></Text></Column>
+            <Column hAlign="End" ><Text text = "Age"></Text></Column>
+        </columns>
+        <items>
+            <ColumnListItem
+                vAlign="Inherit"
+            >
+                <cells>
+                    <Text text="{fullName}" />
+                    <Text text="{gender}" />
+                    <Text text="{age}" />
+                </cells>
+            </ColumnListItem>
+        </items>
+            <!-- Content Here -->
+        </Table>
+    </Page>
+</mvc:View>
